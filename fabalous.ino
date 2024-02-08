@@ -88,7 +88,6 @@ void loop()
     M5.Lcd.printf(text.c_str());
 
     setNfcText(text);
-
   }
     
   if(!nfc.emulate(500)){ // timeout 1 second
@@ -106,7 +105,7 @@ void loop()
     msg.print();
   }
 
-  delay(10);
+  delay(1);
 }
 
 
